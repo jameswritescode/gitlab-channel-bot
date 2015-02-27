@@ -1,3 +1,5 @@
+#!/usr/bin/env ruby
+
 require 'cinch'
 require 'sqlite3'
 require 'yaml'
