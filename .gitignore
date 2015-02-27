@@ -1,3 +1,5 @@
+gitlab.yml
+
 *.gem
 *.rbc
 /.config
