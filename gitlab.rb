@@ -4,7 +4,7 @@ require 'cinch'
 require 'sqlite3'
 require 'yaml'
 
-config = YAML.load_file('bot.yml')
+config = YAML.load_file('gitlab.yml')
 
 bot = Cinch::Bot.new do
   configure do |c|
