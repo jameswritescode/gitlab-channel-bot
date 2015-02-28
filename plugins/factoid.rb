@@ -3,9 +3,9 @@ class Factoid
 
   set :prefix, /^\?/
 
-  match(/((?!(?:set|del)$)[\w\S]+)$/, method: :search)
-  match(/set ((?!(?:set|del)$)[\w\S]+) = (.*)/, method: :set)
-  match(/del ([\w\S]+)/, method: :del)
+  match(/((?!(?:set|del)$)\S+)$/, method: :search)
+  match(/set ((?!(?:set|del)$)\S+) = (.*)/, method: :set)
+  match(/del (\S+)/, method: :del)
 
   def search(m, word)
     fact = get_fact_for(word)
