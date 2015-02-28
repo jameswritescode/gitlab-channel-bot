@@ -1,2 +1,7 @@
 username: gitlab
 password: password
+
+db: gitlab.db
+
+channels:
+  - "##somechan"
