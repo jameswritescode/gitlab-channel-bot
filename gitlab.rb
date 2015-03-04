@@ -26,7 +26,7 @@ $bot = Cinch::Bot.new do
   end
 end
 
-# Thread.new { $bot.start }
+Thread.new { $bot.start }
 
 Thread.new do
   set :port, $config['sinatra_port']
