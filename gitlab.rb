@@ -34,7 +34,7 @@ Thread.new do
   get '/gitlab_facts' do
     headers 'Content-Type' => 'text/plain'
 
-    facts = $database.execute('SELECT word, fact FROM factoids')
+    facts = $database.execute('SELECT word, fact FROM factoids ORDER BY word')
 
     Terminal::Table.new(headings: ['Word', 'Fact'], rows: facts).to_s
   end
