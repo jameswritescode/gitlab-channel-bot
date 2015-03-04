@@ -31,7 +31,7 @@ Thread.new { $bot.start }
 Thread.new do
   set :port, $config['sinatra_port']
 
-  get '/' do
+  get '/gitlab_facts' do
     headers 'Content-Type' => 'text/plain'
 
     facts = $database.execute('SELECT word, fact FROM factoids')
