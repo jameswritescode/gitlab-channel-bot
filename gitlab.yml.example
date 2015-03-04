@@ -3,5 +3,7 @@ password: password
 
 db: gitlab.db
 
+sinatra_port: 1234
+
 channels:
   - "##somechan"
